@@ -18,6 +18,7 @@ WORKDIR "$APP_HOME"
 
 COPY conf/ conf/
 COPY views/ views/
+COPY static/ static/
 COPY --from=builder "$APP_HOME"/raven $APP_HOME
 
 EXPOSE 8080
