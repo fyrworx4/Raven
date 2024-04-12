@@ -74,7 +74,7 @@ docker run -it --rm -p 8080:8080 -v $PWD/src:/go/src/raven raven-dev
 
 2. Build Production Docker Image
 ```
-docker build -t raven-prod -f Dockerfile.production
+docker build -t raven-prod -f Dockerfile.production .
 ```
 
 3. Run
